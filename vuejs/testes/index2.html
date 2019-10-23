@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops</title>
+</head>
+<body>
+    <div id="app">
+    <p v-if="seen">Agora você me viu</p>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                seen : false
+            }
+
+        });
+    </script>
+</body>
+</html>

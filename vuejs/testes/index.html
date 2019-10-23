@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:v-bind="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Aula - Vue</title>
+    </head>
+    <body>
+        <div id="app">
+            <span v-bind:tittle="message">
+                Passe o mouse aqui.
+                {{message}}
+            </span>
+        </div>
+
+        <script src = "https://unpkg.com/vue"></script>
+        <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                status: true,
+                titulo: "Teste",
+                message: "Página carregada em: " + new Date().toLocaleString(),
+                texto: "Eis um pequeno texto aqui".length,
+            }
+
+        });
+        </script>
+    </body>
+</html>

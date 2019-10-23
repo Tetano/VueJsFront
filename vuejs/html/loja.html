@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/loja.css">
+    <title>Loja</title>
+</head>
+<body>
+<!--<div id="app">-->
+<!--    <h1>{{product.split('').reverse().join('') + ' - '+ teste + '- INVERTIDO' }}</h1>-->
+<!--</div>-->
+<!--<div id="tst">-->
+<!--    <h1 class="textoAzul">{{product}}</h1>-->
+<!--</div>-->
+<!--<div id ="nomes">-->
+<!--    <div class="divprimaria">-->
+<!--        <h1>{{nome + ' ' + sobrenome}}</h1>-->
+<!--    </div>-->
+<!--</div>-->
+    <div id="app">
+        <div class="produto">
+<!--            <div class="produto-imagem">-->
+<!--                <img v-bind:src="imagem">-->
+<!--            </div>-->
+
+
+            <div class="produto-info"></div>
+            <h1 id="produto">{{produto}}   </h1>
+            <div class="divLista">
+                <ul class="ul">
+                    <li id="barraLateral1">
+                        <button>Catalogo</button>
+                        <button>Contatos</button>
+                        <button>Login</button>
+                        <button>Registrar</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<script>
+    let divteste = document.getElementById('app');
+    let campoproduto = document.getElementById('produto');
+    let barralateral = document.getElementById('barraLateral');
+    document.getElementById('produto').style.color = '#F00';
+    document.getElementById('app').style.backgroundColor = '#333';
+    document.getElementById('produto').style.marginRight = '40%';
+    document.getElementById('produto').style.marginTop = '0px';
+    document.getElementById('barraLateral').style.listStyleType = 'none';
+    document.getElementById('barraLateral').style.marginRight = '50px';
+</script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="../main.js"></script>
+</body>
+</html>
